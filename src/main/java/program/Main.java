@@ -23,7 +23,7 @@ import model.Automaton;
 import model.State;
 import model.Transition;
 
-
+//O programa possui apenas uma classe main
 public class Main {
 
 	private static CommandLine commandLine;
