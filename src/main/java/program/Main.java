@@ -32,7 +32,7 @@ public class Main {
 	
 		receberEntradas(args);
 		
-		// Receber como entrada uma sentença e um arquivo no formato jflap contendo a descrição de um AFN qualquer
+		//Receber como entrada uma sentença e um arquivo no formato jflap contendo a descrição de um AFN qualquer
 		String pathFile = Util.getOption('a', commandLine);
 		Util.getOption('a', commandLine);
 		String imput = Util.getOption('f', commandLine);
@@ -40,7 +40,7 @@ public class Main {
 		File fileAFN = new File(pathFile);
 		AF afn = loadAF(fileAFN);
 		
-		// Gerar como saída outro arquivo contendo a descrição do AFD equivalente
+		//Gerar como saída outro arquivo contendo a descrição do AFD equivalente
 		AF afd = convertToAFD(afn);
 		afd.setType("fa");
 		String output = pathFile.substring(0, pathFile.lastIndexOf("."))+"_convertidoAFD.jff";
